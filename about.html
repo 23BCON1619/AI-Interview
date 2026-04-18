@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - AI Interview Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+    <nav class="flex justify-between p-5 bg-gray-900 items-center">
+      <h1 class="text-xl font-bold">AI Tool</h1>
+      <button class="md:hidden text-white" onclick="toggleMenu()">☰</button>
+      <div
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0"
+      >
+        <a href="index.html" class="mx-3 my-1 md:my-0 block md:inline">Home</a>
+        <a href="price.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Pricing</a
+        >
+        <a href="contact.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Contact</a
+        >
+        <a href="about.html" class="mx-3 my-1 md:my-0 block md:inline">About</a>
+        <a href="payment.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Payment</a
+        >
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <section class="bg-black text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center mb-12">
+          About Our AI Interview Tool
+        </h2>
+
+        <!-- Intro -->
+        <p class="text-gray-300 text-lg text-center max-w-3xl mx-auto mb-12">
+          Our AI Interview Tool is designed to help students and professionals
+          prepare for real-world interviews using advanced artificial
+          intelligence. It simulates real interview environments, analyzes your
+          responses, and provides instant feedback to improve your performance
+          and confidence.
+        </p>
+
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- What it does -->
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+            <h3 class="text-2xl font-semibold mb-3">What Our AI Does</h3>
+            <p class="text-gray-400 mb-4">
+              Our AI acts as a virtual interviewer that asks you real interview
+              questions based on your field and experience level.
+            </p>
+            <ul class="list-disc ml-6 text-gray-400 space-y-2">
+              <li>Generates real interview questions</li>
+              <li>Evaluates your answers instantly</li>
+              <li>Tracks your performance over time</li>
+              <li>Provides improvement suggestions</li>
+            </ul>
+          </div>
+
+          <!-- How it works -->
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+            <h3 class="text-2xl font-semibold mb-3">How It Works</h3>
+            <p class="text-gray-400 mb-4">
+              The system uses AI models to analyze your responses and provide
+              personalized feedback.
+            </p>
+            <ul class="list-disc ml-6 text-gray-400 space-y-2">
+              <li>User starts a mock interview</li>
+              <li>AI asks questions in real-time</li>
+              <li>User responds via text or voice</li>
+              <li>AI evaluates and gives feedback</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="mt-16 text-center">
+          <h3 class="text-3xl font-semibold mb-6">Why This Tool Matters</h3>
+
+          <p class="text-gray-400 max-w-3xl mx-auto">
+            Many candidates fail interviews due to lack of practice and proper
+            feedback. Our AI-powered system bridges that gap by providing a
+            realistic practice environment, helping users improve their
+            communication skills, technical knowledge, and confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 text-gray-700 py-12 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+        <!-- LOGO + ABOUT -->
+        <div>
+          <h2 class="text-xl font-bold mb-3">🤖 AI Interview</h2>
+          <p class="text-sm mb-4">
+            Your AI-powered interview assistant for better career outcomes.
+          </p>
+          <p class="text-sm text-gray-500">23bcon1619@gmail.com</p>
+        </div>
+
+        <!-- PRODUCT -->
+        <div>
+          <h3 class="font-semibold mb-3">Product</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="price.html" class="hover:text-black">Pricing</a></li>
+            <li><a href="#" class="hover:text-black">Compare Tools</a></li>
+            <li><a href="#" class="hover:text-black">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div>
+          <h3 class="font-semibold mb-3">Legal</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="policy.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="/refund.html">Refunds & Cancellation</a></li>
+          </ul>
+        </div>
+
+        <!-- SUPPORT -->
+        <div>
+          <h3 class="font-semibold mb-3">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="https://wa.me/918739868374" target="_blank"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+        <p>AI Interview™ is a trademark of your company.</p>
+        <p>© 2026 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

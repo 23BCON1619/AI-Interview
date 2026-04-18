@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - AI Interview Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+    <nav class="flex justify-between p-5 bg-gray-900 items-center">
+      <h1 class="text-xl font-bold">AI Tool</h1>
+      <button class="md:hidden text-white" onclick="toggleMenu()">☰</button>
+      <div
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0"
+      >
+        <a href="index.html" class="mx-3 my-1 md:my-0 block md:inline">Home</a>
+        <a href="price.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Pricing</a
+        >
+        <a href="contact.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Contact</a
+        >
+        <a href="about.html" class="mx-3 my-1 md:my-0 block md:inline">About</a>
+        <a href="payment.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Payment</a
+        >
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      }
+
+      function sendToWhatsApp() {
+        const name = document.querySelector('input[placeholder="Name"]').value;
+        const email = document.querySelector('input[placeholder="Email"]').value;
+        const message = document.querySelector('textarea[placeholder="Message"]').value;
+        const whatsappNumber = '918739868374';
+        const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(url, '_blank');
+      }
+    </script>
+
+    <section class="py-20 px-10 text-center">
+      <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
+      <p class="text-lg mb-6">Have questions? Reach out to us!</p>
+      <form class="max-w-md mx-auto">
+        <input
+          class="w-full p-2 mb-3 text-black rounded"
+          placeholder="Name"
+          type="text"
+        />
+        <input
+          class="w-full p-2 mb-3 text-black rounded"
+          placeholder="Email"
+          type="email"
+        />
+        <textarea
+          class="w-full p-2 mb-3 text-black rounded"
+          placeholder="Message"
+        ></textarea>
+        <button type="button" onclick="sendToWhatsApp()" class="bg-green-500 px-6 py-2 rounded">Send</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 text-gray-700 py-12 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+        <!-- LOGO + ABOUT -->
+        <div>
+          <h2 class="text-xl font-bold mb-3">🤖 AI Interview</h2>
+          <p class="text-sm mb-4">
+            Your AI-powered interview assistant for better career outcomes.
+          </p>
+          <p class="text-sm text-gray-500">23bcon1619@gmail.com</p>
+        </div>
+
+        <!-- PRODUCT -->
+        <div>
+          <h3 class="font-semibold mb-3">Product</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="price.html" class="hover:text-black">Pricing</a></li>
+            <li><a href="#" class="hover:text-black">Compare Tools</a></li>
+            <li><a href="#" class="hover:text-black">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div>
+          <h3 class="font-semibold mb-3">Legal</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="policy.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refunds & Cancellation</a></li>
+          </ul>
+        </div>
+
+        <!-- SUPPORT -->
+        <div>
+          <h3 class="font-semibold mb-3">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="https://wa.me/918739868374" target="_blank"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+        <p>AI Interview™ is a trademark of your company.</p>
+        <p>© 2026 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

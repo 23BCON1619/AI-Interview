@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+<nav class="flex justify-between p-5 bg-gray-900 items-center">
+  <h1 class="text-xl font-bold">AI Tool</h1>
+  <button class="md:hidden text-white" onclick="toggleMenu()">☰</button>
+  <div id="menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0">
+    <a href="index.html" class="mx-3 my-1 md:my-0 block md:inline">Home</a>
+    <a href="price.html" class="mx-3 my-1 md:my-0 block md:inline">Pricing</a>
+    <a href="contact.html" class="mx-3 my-1 md:my-0 block md:inline">Contact</a>
+    <a href="about.html" class="mx-3 my-1 md:my-0 block md:inline">About</a>
+    <a href="payment.html" class="mx-3 my-1 md:my-0 block md:inline">Payment</a>
+  </div>
+</nav>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('hidden');
+}
+</script>
+
+  
+
+<!-- HERO SECTION -->
+<section class="text-center py-24 bg-gradient-to-r from-purple-700 to-blue-600">
+  <h1 class="text-5xl font-bold mb-4">AI Interview Tool 🚀</h1>
+  <p class="text-lg mb-6">Practice interviews, get instant feedback & boost confidence</p>
+  <a href="https://wa.me/918739868374?text=I%20want%20to%20start%20a%20demo" target="_blank" class="bg-black px-6 py-3 rounded-lg hover:bg-gray-800 inline-block">Start Demo</a>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-20 px-10 text-center">
+  <h2 class="text-3xl font-bold mb-10">Why Choose Us</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">AI Mock Interviews</h3>
+      <p>Real interview experience with smart AI questions</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Instant Feedback</h3>
+      <p>Get performance analysis instantly</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Boost Confidence</h3>
+      <p>Practice until you're fully confident</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK SECTION -->
+<section class="py-20 bg-gray-900 px-10">
+  <h2 class="text-3xl font-bold mb-10 text-center">User Feedback</h2>
+
+  <div class="space-y-6 max-w-3xl mx-auto">
+    
+    <div class="bg-gray-800 p-5 rounded-lg">
+      <p>"This tool helped me crack my interview easily!"</p>
+      <span class="text-sm text-gray-400">— Rahul</span>
+    </div>
+
+    <div class="bg-gray-800 p-5 rounded-lg">
+      <p>"Best AI interview practice platform I have used."</p>
+      <span class="text-sm text-gray-400">— Priya</span>
+    </div>
+
+    <div class="bg-gray-800 p-5 rounded-lg">
+      <p>"Confidence level boosted after using this."</p>
+      <span class="text-sm text-gray-400">— Aman</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="py-20 text-center px-10">
+  <h2 class="text-3xl font-bold mb-10">How to Use AI Interview</h2>
+
+  <div class="grid md:grid-cols-4 gap-6">
+    <div class="bg-gray-800 p-6 rounded-lg">1. Sign Up</div>
+    <div class="bg-gray-800 p-6 rounded-lg">2. Start Demo</div>
+    <div class="bg-gray-800 p-6 rounded-lg">3. Practice Interview</div>
+    <div class="bg-gray-800 p-6 rounded-lg">4. Get Feedback</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-100 text-gray-700 py-12 px-6">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+
+    <!-- LOGO + ABOUT -->
+    <div>
+      <h2 class="text-xl font-bold mb-3">🤖 AI Interview</h2>
+      <p class="text-sm mb-4">
+        Your AI-powered interview assistant for better career outcomes.
+      </p>
+      <p class="text-sm text-gray-500">23bcon1619@gmail.com</p>
+    </div>
+
+    <!-- PRODUCT -->
+    <div>
+      <h3 class="font-semibold mb-3">Product</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="price.html" class="hover:text-black">Pricing</a></li>
+        <li><a href="#" class="hover:text-black">Compare Tools</a></li>
+        <li><a href="#" class="hover:text-black">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- LEGAL -->
+    <div>
+      <h3 class="font-semibold mb-3">Legal</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="policy.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="/refund.html">Refunds & Cancellation</a></li>
+      </ul>
+    </div>
+
+    <!-- SUPPORT -->
+    <div>
+      <h3 class="font-semibold mb-3">Support</h3>
+      <ul class="space-y-2 text-sm">
+            <li><a href="https://wa.me/918739868374" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+xx
+  <!-- BOTTOM -->
+  <div class="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+    <p>AI Interview™ is a trademark of your company.</p>
+    <p>© 2026 All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>
+  </body>
+</html>
