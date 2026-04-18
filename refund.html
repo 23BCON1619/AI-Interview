@@ -7,7 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-black text-white px-6 py-12">
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+    <nav class="flex justify-between p-5 bg-gray-900 items-center">
+      <h1 class="text-xl font-bold">Outformer AI Tool</h1>
+      <button class="md:hidden text-white" onclick="toggleMenu()">☰</button>
+      <div
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0"
+      >
+        <a href="index.html" class="mx-3 my-1 md:my-0 block md:inline">Home</a>
+        <a href="price.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Pricing</a
+        >
+        <a href="contact.html" class="mx-3 my-1 md:my-0 block md:inline"
+          >Contact</a
+        >
+        <a href="about.html" class="mx-3 my-1 md:my-0 block md:inline">About</a>
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu")
+        menu.classList.toggle("hidden")
+      }
+    </script>
     <div class="max-w-5xl mx-auto">
       <h1 class="text-4xl font-bold mb-4">Cancellation and Refunds Policy</h1>
       <p class="text-gray-400 mb-8">Last updated: December 16, 2025</p>
@@ -15,12 +40,13 @@
       <!-- 1 -->
       <h2 class="text-2xl font-semibold mt-6 mb-2">1. Refund Policy</h2>
       <p class="text-gray-300 mb-3">
-        At Outformer, we provide a complete live demo and explanation of our service before any payment is made. 
-Users are encouraged to fully evaluate the service during the demo session.
-
-Once the payment is made after satisfaction, all purchases are considered final and non-refundable.
-
-We do not provide refunds under any circumstances after successful payment, except in rare cases of technical failure from our side where the service is completely inaccessible.
+        At Outformer, we provide a complete live demo and explanation of our
+        service before any payment is made. Users are encouraged to fully
+        evaluate the service during the demo session. Once the payment is made
+        after satisfaction, all purchases are considered final and
+        non-refundable. We do not provide refunds under any circumstances after
+        successful payment, except in rare cases of technical failure from our
+        side where the service is completely inaccessible.
       </p>
       <ul class="list-disc ml-6 text-gray-300">
         <li>Technical issues preventing you from using the service</li>
@@ -32,112 +58,98 @@ We do not provide refunds under any circumstances after successful payment, exce
       <!-- 2 -->
       <h2 class="text-2xl font-semibold mt-6 mb-2">2. No Refund Policy</h2>
       <p class="text-gray-300 mb-3">
-       Since users are given a live demo and proper understanding of the service before payment, no refunds will be issued after the purchase is completed.
-
-By making a payment, you agree that you are satisfied with the service and understand that no refund will be provided.
+        Since users are given a live demo and proper understanding of the
+        service before payment, no refunds will be issued after the purchase is
+        completed. By making a payment, you agree that you are satisfied with
+        the service and understand that no refund will be provided.
       </p>
-      <ul class="list-disc ml-6 text-gray-300">
-        <li>Within 24 hours: Full refund eligible if no service usage</li>
-        <li>1–3 days: Partial refund based on usage (minimum 50% refund)</li>
-        <li>4–7 days: Case-by-case review, typically 25–50% refund</li>
-        <li>
-          After 7 days: No refunds available except for technical issues caused
-          by us
-        </li>
-      </ul>
 
       <!-- 3 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">
-        3. Non-Refundable Policy
-      </h2>
+      <h2 class="text-2xl font-semibold mt-6 mb-2">3. Non-Refundable Policy</h2>
       <ul class="list-disc ml-6 text-gray-300">
         <li>All payments are final and non-refundable</li>
-<li>No refund will be provided for change of mind</li>
-<li>No refund for not achieving expected results</li>
-<li>No refund for lack of usage</li>
-<li>No refund for user-side issues (device, internet, etc.)</li>
+        <li>No refund will be provided for change of mind</li>
+        <li>No refund for not achieving expected results</li>
+        <li>No refund for lack of usage</li>
+        <li>No refund for user-side issues (device, internet, etc.)</li>
         <li>Violation of our Terms of Service</li>
       </ul>
 
       <!-- 4 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">4. Usage-Based Refunds</h2>
-      <p class="text-gray-300 mb-3">How we calculate partial refunds:</p>
+      <h2 class="text-2xl font-semibold mt-6 mb-2">4. Dispute Resolution</h2>
       <ul class="list-disc ml-6 text-gray-300">
-        <li>Standard Plan (₹1199): ₹6.66 per minute used will be deducted</li>
-        <li>Pro Plan (₹1999): ₹4.76 per minute used will be deducted</li>
-        <li>Pro Max Plan (₹2999): ₹4.17 per minute used will be deducted</li>
-      </ul>
-      <p class="text-gray-300 mt-3">
-        * Minimum refund amount is 25% of the original purchase price <br />
-        * 18% GST is applicable on all plans and is added at checkout
-      </p>
-
-      <!-- 5 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">
-        5. How to Request a Refund
-      </h2>
-      <ul class="list-disc ml-6 text-gray-300">
-        <li>
-          Contact Support: Email us at 23bcon1619@gmmail.com with subject "Refund
-          Request"
-        </li>
-        <li>Provide registered email, transaction ID, and reason</li>
-        <li>Review time: 2–3 business days</li>
-        <li>Decision via email</li>
-        <li>Approved refunds processed in 5–7 business days</li>
-      </ul>
-
-      <!-- 6 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">6. Refund Methods</h2>
-      <ul class="list-disc ml-6 text-gray-300">
-        <li>Refund to original payment method</li>
-        <li>Bank transfers: 5–7 days</li>
-        <li>Card refunds: 3–5 days</li>
-        <li>Wallet refunds: Instant to 1 day</li>
-      </ul>
-
-      <!-- 7 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">7. Cancellation Policy</h2>
-      <ul class="list-disc ml-6 text-gray-300">
-        <li>You can cancel anytime</li>
-        <li>No future charges after cancellation</li>
-        <li>Remaining credits remain usable</li>
-      </ul>
-
-      <p class="text-gray-300 mt-3">
-        Account deletion requests will remove all data within 30 days and cannot
-        be undone.
-      </p>
-
-      <!-- 8 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">8. Dispute Resolution</h2>
-      <ul class="list-disc ml-6 text-gray-300">
-        
         <li>Contact your bank for chargeback</li>
         <li>Reach consumer protection authorities</li>
       </ul>
 
-      <!-- 9 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">9. Free Tier Policy</h2>
+      <!-- 5 -->
+      <h2 class="text-2xl font-semibold mt-6 mb-2">5. Free Tier Policy</h2>
       <p class="text-gray-300">
         Free users are not eligible for refunds but may receive support or
         credits in case of issues.
       </p>
 
-      <!-- 10 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">10. Policy Changes</h2>
+      <!-- 6 -->
+      <h2 class="text-2xl font-semibold mt-6 mb-2">6. Policy Changes</h2>
       <p class="text-gray-300">
         We may update this policy at any time. Continued use means acceptance of
         updates.
       </p>
 
-      <!-- 11 -->
-      <h2 class="text-2xl font-semibold mt-6 mb-2">11. Contact Information</h2>
+      <!-- 7 -->
+      <h2 class="text-2xl font-semibold mt-6 mb-2">7. Contact Information</h2>
       <p class="text-gray-300">
         Email: 23bcon1619@gmail.com <br />
         Response Time: 24–48 hours <br />
         Business Hours: Monday to Friday, 9 AM – 6 PM IST
       </p>
     </div>
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 text-gray-700 py-12 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+        <!-- LOGO + ABOUT -->
+        <div>
+          <h2 class="text-xl font-bold mb-3">🤖 AI Interview</h2>
+          <p class="text-sm mb-4">
+            Your AI-powered interview assistant for better career outcomes.
+          </p>
+          <p class="text-sm text-gray-500">23bcon1619@gmail.com</p>
+        </div>
+
+        <!-- PRODUCT -->
+        <div>
+          <h3 class="font-semibold mb-3">Product</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="price.html" class="hover:text-black">Pricing</a></li>
+            <li><a href="#" class="hover:text-black">Compare Tools</a></li>
+            <li><a href="#" class="hover:text-black">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div>
+          <h3 class="font-semibold mb-3">Legal</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="termandconditions.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="/refund.html">Refunds & Cancellation</a></li>
+          </ul>
+        </div>
+
+        <!-- SUPPORT -->
+        <div>
+          <h3 class="font-semibold mb-3">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+        <p>AI Interview™ is a trademark of your company.</p>
+        <p>© 2026 All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
